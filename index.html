@@ -131,4 +131,33 @@
 
 </div>
 </body>
+<audio id="bgAudio" loop>
+  <source src="audio/OOBE.mp3" type="audio/mp3">
+</audio>
+<script>
+  const audio = document.getElementById("bgAudio");
+  audio.volume = 0.05;
+
+  function startAudio() {
+    audio.play();
+  }
+
+  document.addEventListener("click", startAudio);
+
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach(video => {
+    video.addEventListener("play", () => {
+      audio.pause();
+    });
+
+    video.addEventListener("pause", () => {
+      audio.play();
+    });
+
+    video.addEventListener("ended", () => {
+      audio.play();
+    });
+  });
+</script>
 </html>
