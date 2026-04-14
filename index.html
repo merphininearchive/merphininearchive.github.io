@@ -10,7 +10,7 @@
 }
 
 .navbar a {
-  color: rgb(240, 166, 106);
+  color: rgb(240, 106, 233);
   background-color: rgb(182, 214, 224);
   padding: 5px 10px;
   margin: 0 10px;
@@ -19,7 +19,7 @@
 }
 
 .navbar a:hover {
-  background-color: rgb(240, 166, 106);
+  background-color: rgb(240, 106, 233);
   color: rgb(182, 214, 224);
 }
 
@@ -30,6 +30,49 @@
       text-align: center;
       padding-top: 50px;
     }
+
+    .posts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.post {
+  background-color: rgb(208, 164, 113);
+  border: 2px solid white;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 3px 3px black;
+}
+
+.post img {
+  width: 100%;
+}
+
+.post p {
+  margin-top: 5px;
+}
+
+.post {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.post:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
   </style>
 </head>
 <body>
@@ -37,8 +80,29 @@
   <a href="index.html">Posts</a>
   <a href="archive.html">Archive</a>
   <a href="login.html">Log In</a>
-</div>
-  <h1>POSTTSSSSS.</h1>
+<div class="window">
+  <h1>Posts</h1>
   <p>Being made by Kalevus -Silo Dax-, Ottgin, and 7y_te -Silo Intoc-</p>
+</div>
+<div class="posts">
+  
+  <div class="post">
+  <video controls width="200">
+    <source src="videos/clockhall.mp4" type="video/mp4">
+  </video>
+  <p>clockhall test 1</p>
+  <small>uploaded: 4/13/2026</small>
+</div>
+  <a href="video2.html" class="post">
+  <img src="https://via.placeholder.com/200x120">
+  <p>Late Night Talk</p>
+</a>
+
+  <a href="video3.html" class="post">
+  <img src="https://via.placeholder.com/200x120">
+  <p>Just Walking Around</p>
+</a>
+
+</div>
 </body>
 </html>
